@@ -1,0 +1,43 @@
+{
+  "name": "develon-blwsd",
+  "version": "0.0.0",
+  "description": "Yes",
+  "main": "pages/settings.html",
+  "scripts": {
+    "start": "nw ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@localhost:321/develon/blwsd.git"
+  },
+  "author": "Develon Trujillo <develon5543@outlook.com>",
+  "license": "All Rights Reserved",
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.1.1",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "nw": "^0.52.0",
+    "postcss-loader": "^5.1.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "window": {
+    "id": "develon-material-thing",
+    "title": "Main",
+    "width": 800,
+    "height": 600,
+    "min_width": 800,
+    "min_height": 600,
+    "frame": false
+  },
+  "dependencies": {
+    "material-components-web": "^10.0.0"
+  }
+}
