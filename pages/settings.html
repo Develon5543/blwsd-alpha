@@ -3,13 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <title>Settings</title>
-        <link rel="stylesheet" href="/styles_complex/settings.css">
+        <link rel="stylesheet" href="/styles_complex/settings_components.css">
+        <link rel="stylesheet" href="/styles/material_icons.css">
+        <link rel="stylesheet" href="/styles/roboto.css">
+        <link rel="stylesheet" href="/styles/settings.css">
+        <script src="/scripts/settings.js"></script>
     </head>
-    <body>
-        <button class="mdc-button mdc-button--raised">
-            <span class="mdc-button__ripple"></span>
-            <span class="mdc-button__label">Button</span>
-        </button>
-        <script src="/scripts_complex/settings_compiled.js"></script>
+    <body class="nodrag">
+        <audio id="audio_player"><source type="audio/x-wav"></audio>
+        <header class="drag mdc-top-app-bar mdc-top-app-bar--dense">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <button class="nodrag material-icons-round mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                    <span class="mdc-top-app-bar__title">Settings</span>
+                </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                    <button id="button_minimize" class="nodrag material-icons-round mdc-top-app-bar__action-item mdc-icon-button">expand_more</button>
+                    <button id="button_close" class="nodrag material-icons-round mdc-top-app-bar__action-item mdc-icon-button">close</button>
+                </section>
+            </div>
+        </header>
+        <main class="mdc-top-app-bar--dense-fixed-adjust">
+            <button id="button_refresh" class="mdc-button mdc-button--raised">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label">Refresh</span>
+            </button>
+            <button id="button_devtools" class="mdc-button mdc-button--raised">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label">Devtools</span>
+            </button>
+        </main>
     </body>
 </html>

@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+    user-select: none;
+    display: flex;
+    height: 100vh;
+}
+
+.nodrag {
+    -webkit-app-region: no-drag;
+}
+
+.drag {
+    -webkit-app-region: drag;
+}
+
+/* .mdc-drawer-app-content {
+    flex: auto;
+    overflow: auto;
+    position: relative;
+} */
+
+/* #tab_container {
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.main_app_bar {
+    position: absolute;
+} */
