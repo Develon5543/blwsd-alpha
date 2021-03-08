@@ -1,0 +1,4 @@
+#!/bin/bash
+mv dist/scripts_complex/* scripts_complex/
+mv dist/styles_complex/* styles_complex/
+rm -R dist

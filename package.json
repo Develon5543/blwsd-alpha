@@ -4,7 +4,8 @@
   "description": "Yes",
   "main": "pages/settings.html",
   "scripts": {
-    "start": "nw ."
+    "start": "nw .",
+    "build": "webpack && ./postbuild"
   },
   "repository": {
     "type": "git",
