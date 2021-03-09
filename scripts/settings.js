@@ -1,8 +1,10 @@
 var page_window = null
 var button_refresh = null
 var button_devtools = null
+var button_menu = null
 var button_minimize = null
 var button_close = null
+var nav_settings = null
 var audio_player = null
 var audio_player_source = null
 
@@ -36,8 +38,10 @@ function page_loaded(){
     page_window = nw.Window.get()
     button_refresh = document.getElementById("button_refresh")
     button_devtools = document.getElementById("button_devtools")
+    button_menu = document.getElementById("button_menu")
     button_minimize = document.getElementById("button_minimize")
     button_close = document.getElementById("button_close")
+    nav_settings = document.getElementById("nav_settings")
     audio_player = document.getElementById("audio_player")
     audio_player_source = audio_player.firstChild
 
@@ -48,8 +52,10 @@ function page_loaded(){
 
     button_refresh.addEventListener("click", page_reload)
     button_devtools.addEventListener("click", page_devtools)
+    button_menu.addEventListener("click", function(){play_sound("button-press")})
     button_minimize.addEventListener("click", page_minimize)
     button_close.addEventListener("click", page_close)
+    nav_settings.addEventListener("click", function(){play_sound("tap")})
 }
 
 window.addEventListener("DOMContentLoaded", page_loaded)

@@ -5,6 +5,28 @@ body {
     height: 100vh;
 }
 
+.mdc-drawer-app-content {
+    flex: auto;
+    overflow: auto;
+    position: relative;
+}
+
+#top_app_bar {
+    position: absolute;
+}
+
+#tab_container {
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* overflow: auto;
+    height: 100%; */
+}
+
+.mdc-top-app-bar {
+    z-index: 7;
+}
+
 .nodrag {
     -webkit-app-region: no-drag;
 }
@@ -13,18 +35,11 @@ body {
     -webkit-app-region: drag;
 }
 
-/* .mdc-drawer-app-content {
-    flex: auto;
-    overflow: auto;
-    position: relative;
-} */
-
-/* #tab_container {
-    margin-top: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
+#card_developer {
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
-.main_app_bar {
-    position: absolute;
-} */
+#card_developer_content {
+    padding: 16px;
+}

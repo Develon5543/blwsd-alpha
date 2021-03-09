@@ -11,10 +11,10 @@
     </head>
     <body class="nodrag">
         <audio id="audio_player"><source type="audio/x-wav"></audio>
-        <header class="drag mdc-top-app-bar mdc-top-app-bar--dense">
+        <header id="top_app_bar" class="drag mdc-top-app-bar mdc-top-app-bar--dense">
             <div class="mdc-top-app-bar__row">
                 <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                    <button class="nodrag material-icons-round mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                    <button id="button_menu" class="nodrag material-icons-round mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
                     <span class="mdc-top-app-bar__title">Settings</span>
                 </section>
                 <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
@@ -23,15 +23,37 @@
                 </section>
             </div>
         </header>
-        <main class="mdc-top-app-bar--dense-fixed-adjust">
-            <button id="button_refresh" class="mdc-button mdc-button--raised">
-                <span class="mdc-button__ripple"></span>
-                <span class="mdc-button__label">Refresh</span>
-            </button>
-            <button id="button_devtools" class="mdc-button mdc-button--raised">
-                <span class="mdc-button__ripple"></span>
-                <span class="mdc-button__label">Devtools</span>
-            </button>
-        </main>
+        <aside class="mdc-drawer mdc-drawer--modal mdc-top-app-bar--dense-fixed-adjust">
+            <div class="mdc-drawer__content">
+                <nav id="nav_list" class="mdc-list">
+                    <a id="nav_settings" class="mdc-list-item mdc-list-item--activated" href="#" tabindex="0">
+                        <span class="mdc-list-item__ripple"></span>
+                        <i class="material-icons-round mdc-list-item__graphic" hidden="true">settings</i>
+                        <span class="mdc-list-item__text">Settings</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+        <div class="mdc-drawer-scrim"></div>
+        <div class="mdc-drawer-app-content mdc-top-app-bar--dense-fixed-adjust">
+            <main id="tab_container">
+                <div id="card_developer" class="mdc-card">
+                    <div id="card_developer_content">
+                        <h2 class="mdc-typography mdc-typography--headline6">Developer Tools</h2>
+                        <div class="mdc-typography mdc-typography--body2">This card is only shown if you're a developer.</div>
+                    </div>
+                    <div class="mdc-card__actions">
+                        <button id="button_refresh" class="mdc-button mdc-card__action mdc-card__action--button">
+                            <div class="mdc-button__ripple"></div>
+                            <span class="mdc-button__label">Refresh</span>
+                        </button>
+                        <button id="button_devtools" class="mdc-button mdc-card__action mdc-card__action--button">
+                            <div class="mdc-button__ripple"></div>
+                            <span class="mdc-button__label">Devtools</span>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
     </body>
 </html>
