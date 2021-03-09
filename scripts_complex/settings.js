@@ -2,6 +2,9 @@ import {MDCRipple} from "@material/ripple";
 import {MDCTopAppBar} from "@material/top-app-bar";
 import {MDCDrawer} from "@material/drawer";
 import {MDCList} from "@material/list";
+import {MDCMenu} from "@material/menu";
+
+var button_theme = document.getElementById("button_theme")
 
 /*
     *********
@@ -52,22 +55,15 @@ topAppBar.listen("MDCTopAppBar:nav",()=>{
 });
 
 var drawer_list = new MDCList(document.getElementById("nav_list"))
-// drawer_list.listen("MDCList:action",(event)=>{
-//     if(event.detail.index == 0){
-//         if(current_nav_position == 1){
-//             current_nav_position = 0
-//             page_developer.classList.remove("shown")
-//             page_developer.classList.add("hidden")
-//             page_main.classList.remove("hidden")
-//             page_main.classList.add("shown")
-//         }
-//     }else if(event.detail.index == 1){
-//         if(current_nav_position == 0){
-//             current_nav_position = 1
-//             page_main.classList.remove("shown")
-//             page_main.classList.add("hidden")
-//             page_developer.classList.remove("hidden")
-//             page_developer.classList.add("shown")
-//         }
-//     }
-// });
+
+/*
+    *******
+    *Other*
+    *******
+*/
+
+const menu = new MDCMenu(document.querySelector(".mdc-menu"));
+button_theme.addEventListener("click", function(){
+    play_sound("button-press")
+    menu.open = true
+})

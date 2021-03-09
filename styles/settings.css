@@ -35,11 +35,12 @@ body {
     -webkit-app-region: drag;
 }
 
-#card_developer {
+.card {
     margin-left: 25%;
     margin-right: 25%;
+    margin-bottom: 20px;
 }
 
-#card_developer_content {
+.card_content {
     padding: 16px;
 }

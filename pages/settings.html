@@ -37,8 +37,34 @@
         <div class="mdc-drawer-scrim"></div>
         <div class="mdc-drawer-app-content mdc-top-app-bar--dense-fixed-adjust">
             <main id="tab_container">
-                <div id="card_developer" class="mdc-card">
-                    <div id="card_developer_content">
+                <div class="card mdc-card">
+                    <div class="card_content">
+                        <h2 class="mdc-typography mdc-typography--headline6">Theme</h2>
+                        <div class="mdc-typography mdc-typography--body2">Change the appearance of Develon's applications.</div>
+                    </div>
+                    <div class="mdc-card__actions">
+                        <div class="mdc-menu-surface--anchor">
+                            <button id="button_theme" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <div class="mdc-button__ripple"></div>
+                                <span class="mdc-button__label">Choose Theme</span>
+                            </button>
+                            <div class="mdc-menu mdc-menu-surface">
+                                <ul class="mdc-list" tabindex="-1">
+                                    <li id="theme_default" class="mdc-list-item">
+                                        <span class="mdc-list-item__ripple"></span>
+                                        <span class="mdc-list-item__text">Default</span>
+                                    </li>
+                                    <li id="theme_two" class="mdc-list-item">
+                                        <span class="mdc-list-item__ripple"></span>
+                                        <span class="mdc-list-item__text">Two</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mdc-card">
+                    <div class="card_content">
                         <h2 class="mdc-typography mdc-typography--headline6">Developer Tools</h2>
                         <div class="mdc-typography mdc-typography--body2">This card is only shown if you're a developer.</div>
                     </div>
