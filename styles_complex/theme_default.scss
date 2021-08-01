@@ -1,0 +1,33 @@
+@use "@material/theme" with (
+    $primary: #4074c9,
+    $secondary: #c94075,
+    $on-primary: #ffffff,
+    $on-secondary: #ffffff
+);
+
+// Regular components
+@use "@material/button/mdc-button";
+@use "@material/icon-button/mdc-icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/card/mdc-card";
+@use "@material/typography/mdc-typography";
+@use "@material/drawer/mdc-drawer";
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+
+// Mixins
+@use "@material/drawer";
+
+.mdc-drawer {
+    @include drawer.fill-color-accessible(#34373d);
+}
+
+body {
+    background-color: #34373d;
+    color: #ffffff;
+}
+
+.card {
+    color: #000000;
+}

@@ -3,7 +3,7 @@ const autoprefixer = require("autoprefixer");
 module.exports = [{
     mode: "production",
     entry: [
-        "./styles_complex/settings_components.scss",
+        "./styles_complex/theme_default.scss",
         "./scripts_complex/settings.js"
     ],
     output: {
@@ -17,7 +17,7 @@ module.exports = [{
                     {
                         loader: "file-loader",
                         options: {
-                            name: "./styles_complex/settings_components.css"
+                            name: "./styles_complex/theme_default.css"
                         }
                     },
                     {

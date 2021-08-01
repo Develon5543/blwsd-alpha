@@ -1,2 +1,5 @@
 *.code-workspace
 node_modules
+styles_complex/theme_default.css
+scripts_complex/settings_compiled.js*
+assets/*.wav
